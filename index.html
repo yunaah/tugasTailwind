@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenshop</title>
+    <link rel="stylesheet" href="./style/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Navbar -->
+    <header class="font-poppins flex items-center justify-between px-4 md:px-8 py-4 shadow-md">
+      <div class="flex items-center gap-1 text-xl font-bold text-green-600">
+        <img src="./image/logo.png" alt="logo" class="w-[150px] h-[34px]" />
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#" class="text-green-600 border-b-2 border-green-600">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Plant Care</a>
+        <a href="#">Blogs</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined">Search</span>
+        <span class="material-symbols-outlined">Shopping_cart</span>
+          <button class="flex gap-2 items-center bg-accent py-2 px-4 text-white rounded-md">
+        <span class="material-symbols-outlined">Login</span>
+            Login
+          </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 py-10 bg-gray-50">
+      <div class="md:w-1/2 space-y-4 text-center md:text-left">
+        <p class="font-poppins font-medium text-sm uppercase">Welcome to Greenshop</p>
+        <h1 class="font-poppins font-extrabold text-[32px] md:text-[70px] leading-tight uppercase">
+          Let’s Make a <br />Better <span class="text-accent">Planet</span>
+        </h1>
+        <p class="font-poppins font-normal text-jungle text-sm md:text-[14px] leading-[24px]">
+          We are an online plant shop offering a wide range of cheap and trendy plants. <br>
+          Use our plants to create a unique Urban Jungle. Order your favorite plants.
+        </p>
+        <button class="mt-4 px-6 py-2 bg-accent text-white rounded">Shop Now</button>
+      </div>
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <img src="./image/hero.png" alt="plant" class="w-full max-w-[420px] h-auto mx-auto" />
+      </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="font-poppins flex flex-col md:flex-row items-center justify-between gap-4 px-4 md:px-8 py-6">
+      <div class="flex gap-6 text-sm justify-center md:justify-start">
+        <button class="text-green-600 border-b-2 border-green-600">All Plants</button>
+        <button>New Arrivals</button>
+        <button>Sale</button>
+      </div>
+      <div class="text-sm text-gray-600 flex items-center gap-2">
+        <label for="sort" class="whitespace-nowrap">Sort by:</label>
+        <select id="sort" name="sort" class="border border-white-300 rounded px-2 py-1 text-sm">
+          <option value="default">Default sorting</option>
+          <option value="price-low-high">Price: Low to High</option>
+          <option value="price-high-low">Price: High to Low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="font-poppins font-normal grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-4 md:px-8">
+      <!-- Repeat Product Item -->
+      <div class="text-left">
+        <img src="./image/baberton.png" alt="" class="mx-auto mb-2" />
+        <p>Barberton Daisy</p>
+        <p class="text-accent font-semibold">$119.00</p>
+      </div>
+      <div class="text-left">
+        <img src="./image/angel.png" alt="" class="mx-auto mb-2" />
+        <p>Angel Wing Begonia</p>
+        <p class="text-accent font-semibold">$169.00</p>
+      </div>
+      <div class="text-center relative">
+        <span class="absolute top-2 left-2 bg-green-100 text-accent px-2 text-xs font-semibold rounded">13% OFF</span>
+        <img src="./image/african.png" alt="" class="mx-auto mb-2" />
+        <p class="text-left">African Violet</p>
+        <p class="text-left text-accent font-semibold">$199.00 <span class="text-gray-400 line-through">$229.00</span></p>
+      </div>
+      <div class="text-left">
+        <img src="./image/spiderlily.png" alt="" class="mx-auto mb-2" />
+        <p>Beach Spider Lily</p>
+        <p class="text-accent font-semibold">$129.00</p>
+      </div>
+      <div class="text-left">
+        <img src="./image/blushing.png" alt="" class="mx-auto mb-2" />
+        <p>Blushing Bromeliad</p>
+        <p class="text-accent 600 font-semibold">$139.00</p>
+      </div>
+      <div class="text-left">
+        <img src="./image/birdnest.png" alt="" class="mx-auto mb-2" />
+        <p>Bird’s Nest Fern</p>
+        <p class="text-accent font-semibold">$99.00</p>
+      </div>
+      <div class="text-left">
+        <img src="./image/broadleaf.png" alt="" class="mx-auto mb-2" />
+        <p>Broadleaf Lady Palm</p>
+        <p class="text-accent font-semibold">$59.00</p>
+      </div>
+      <div class="text-left">
+        <img src="./image/aluminium.png" alt="" class="mx-auto mb-2" />
+        <p>Aluminum Plant</p>
+        <p class="text-accent font-semibold">$179.00</p>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <div class="flex justify-center gap-2 py-8">
+      <button class="w-8 h-8 bg-accent text-white rounded">1</button>
+      <button class="w-8 h-8 border border-gray-300 rounded">2</button>
+      <button class="w-8 h-8 border border-gray-300 rounded">3</button>
+      <button class="w-8 h-8 border border-gray-300 rounded">4</button>
+    </div>
+
+    <!-- Promo Cards -->
+    <section class="font-poppins grid grid-cols-1 md:grid-cols-2 gap-4 px-4 md:px-8 pb-8">
+      <div class="flex items-center gap-4 p-6 border rounded">
+        <img src="./image/blushing.png" alt="" class="w-24" />
+        <div>
+          <h3 class="font-bold uppercase text-sm text-right">Summer Cactus & Succulents</h3>
+          <p class="text-xs text-gray-600 text-right">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+          <button class="mt-2 px-4 py-1 bg-accent text-white text-sm rounded">Find More</button>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-6 border rounded">
+        <img src="./image/african.png" alt="" class="w-24" />
+        <div>
+          <h3 class="font-bold uppercase text-sm text-right">Styling Trends & Much More</h3>
+          <p class="text-xs text-gray-600 text-right">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+          <button class="mt-2 px-4 py-1 bg-green-600 text-white text-sm rounded">Find More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-50 py-6 px-4 md:px-8 text-sm text-gray-600">
+      <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+        <!-- Logo -->
+        <div class="flex justify-center md:justify-start">
+          <img src="./image/logo.png" alt="logo" class="w-[150px] h-[34px]" />
+        </div>
+    
+        <!-- Address -->
+        <div class="flex items-start gap-2 text-center md:text-left justify-center md:justify-start">
+          <span class="material-symbols-outlined">location_on</span>
+          <span>70 West Buckingham Ave, Farmingdale, NY 11735</span>
+        </div>
+    
+        <!-- Email -->
+        <div class="flex items-start gap-2 text-center md:text-left justify-center md:justify-start">
+          <span class="material-symbols-outlined">mail</span>
+          <span>contact@greenshop.com</span>
+        </div>
+    
+        <!-- Phone -->
+        <div class="flex items-start gap-2 text-center md:text-left justify-center md:justify-start">
+          <span class="material-symbols-outlined">phone_in_talk</span>
+          <span>+88 01911 717 490</span>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="mt-4 text-center text-xs">© 2025 GreenShop. All Rights Reserved.</div>
+  </body>
+</html>
